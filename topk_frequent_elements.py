@@ -38,4 +38,3 @@ class Solution:
         for i in range(k):
             res.append(heapq.heappop(heap)[1])       # Get the number (not frequency)
         return res
-

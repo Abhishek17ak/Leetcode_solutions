@@ -30,3 +30,5 @@ class Solution:
             if diff in mapi:                # Check if we've seen the needed number before
                 return [mapi[diff], i]      # Found it! Return both indices
             mapi[n] = i                     # Store current number and its index
+#here space complexity is O(n) because in worst case we may store all elements in the hashmap
+#time complexity is O(n) because we are iterating through the list only once

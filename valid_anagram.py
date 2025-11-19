@@ -34,3 +34,13 @@ class Solution:
             countT[t[i]]=1+countT.get(t[i],0)
         return countS == countT
 
+#also sort both strings and compare
+        # return sorted(s) == sorted(t)
+        #but time complexity will be O(nlogn)
+        #space complexity will be O(n)
+        #calculating the time complexity and space complexity
+        #time complexity is O(n) because we are iterating through the strings once
+        #space complexity is O(1) because we are using constant space for the hashmaps
+#using in built counter from collections
+        # from collections import Counter
+        # return Counter(s) == Counter(t)   

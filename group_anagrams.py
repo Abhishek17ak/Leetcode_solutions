@@ -35,3 +35,5 @@ class Solution:
                 count[ord(c) - ord('a')] += 1  # Increment count for this letter
             res[tuple(count)].append(s)     # Group by character count signature
         return list(res.values())           # Return all groups
+#here time complexity is O(m*n) where m is number of strings and n is average length of strings
+#space complexity is O(m) for the hashmap and O(m*n) for the output list
